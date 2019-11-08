@@ -30,6 +30,9 @@ class Profile(models.Model):
     class Meta:
         verbose_name = 'Profile'
         verbose_name_plural = 'Profiles'
+        
+    def __str__(self):
+        return self.user.username
 
 class Tag(models.Model):
     nom = models.CharField(max_length=50)

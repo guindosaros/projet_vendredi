@@ -25,6 +25,9 @@ class Contact(models.Model):
 class Newsletter(models.Model):
     """Model definition for Newsletter."""
     email = models.EmailField()
+    status = models.BooleanField(default=True)
+    date_add = models.DateTimeField(auto_now_add=True)
+    date_upd = models.DateTimeField(auto_now=True)
     # TODO: Define fields here
 
     class Meta:

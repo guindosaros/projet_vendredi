@@ -29,7 +29,7 @@ class Profile(models.Model):
         
         instance.profile.save()
         
-    class class Meta:
+    class Meta:
         verbose_name = 'Profile'
         verbose_name_plural = 'Profiles'
 
@@ -47,7 +47,7 @@ class Tag(models.Model):
 # Create your models here.
 
 class Categorie(models.Model):
-    nom=models.CharField(, max_length=50)
+    nom=models.CharField(max_length=50)
     date_add = models.DateTimeField(auto_now_add=True)
     date_upd = models.DateTimeField(auto_now=True)
     status = models.BooleanField(default=True)
@@ -55,7 +55,7 @@ class Categorie(models.Model):
     def __str__(self):
         return self.nom
     
-    class class Meta:
+    class Meta:
         verbose_name = 'Categorie'
         verbose_name_plural = 'Categories'
 
@@ -76,7 +76,7 @@ class Article(models.Model):
     def __str__(self):
         return self.titre
     
-    class class Meta:
+    class Meta:
         verbose_name = 'Article'
         verbose_name_plural = 'Articles'
 
@@ -90,7 +90,7 @@ class Like(models.Model):
     def __str__(self):
         return self.user.username
     
-    class class Meta:
+    class Meta:
         verbose_name = 'Like'
         verbose_name_plural = 'Likes'
 

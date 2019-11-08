@@ -8,9 +8,7 @@ from configuration.models import Social
 class Profile(models.Model):
 
     # Appel de user
-    
     user = models.OneToOneField(User, on_delete=models.CASCADE, related_name='profile')  # 1 user <---> 1 profil
-    
     # Champs suplementaires
     
     contacts = models.CharField(max_length=30, null=True)

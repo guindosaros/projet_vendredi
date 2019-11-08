@@ -21,6 +21,9 @@ from django.conf.urls.static import static
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('', include('blog.urls')),
+    path('contact', include('contact.urls')),
+    path('configuration', include('configuration.urls')),
     path('tinymce/', include('tinymce.urls')),
     path('admin/filebrowser/', site.urls),
 ]

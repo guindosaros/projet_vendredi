@@ -41,6 +41,9 @@ INSTALLED_APPS = [
     'rest_framework',
     'tinymce',
     'filebrowser',
+    'blog.apps.BlogConfig',
+    'contact.apps.ContactConfig',
+    'configuration.apps.ConfigurationConfig',
     
 ]
 

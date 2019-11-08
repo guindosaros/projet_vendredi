@@ -13,3 +13,9 @@ def regulare(request):
 def single(request):
     return render(request, 'pages/single.html')
 
+def register(request):
+    return render(request, 'pages/register.html')
+
+def login(request):
+    return render(request, 'pages/login.html')
+

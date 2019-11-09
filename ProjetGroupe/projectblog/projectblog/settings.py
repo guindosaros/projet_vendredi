@@ -44,6 +44,9 @@ INSTALLED_APPS = [
     'blog.apps.BlogConfig',
     'contact.apps.ContactConfig',
     'configuration.apps.ConfigurationConfig',
+    'api.apps.ApiConfig',
+    'django_filters',
+    'django_seed',
     
 ]
 

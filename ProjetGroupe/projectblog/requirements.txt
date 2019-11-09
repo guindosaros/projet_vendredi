@@ -12,3 +12,5 @@ pytz==2019.3
 six==1.13.0
 sqlparse==0.3.0
 psycopg2-binary
+django_filters
+drf-dynamic-fields

@@ -6,7 +6,7 @@ django-tinymce4-lite==1.7.5
 django-utils2==2.5.4
 djangorestframework==3.10.3
 jsmin==2.2.2
-Pillow==6.2.1
+Pillow==9.0.1
 python-utils==2.3.0
 pytz==2019.3
 six==1.13.0
